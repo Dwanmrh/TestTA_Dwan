@@ -4,40 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Isi Data Mahasiswa</title>
+    <title>Input Mahasiswa</title>
   </head>
   <body>
     <div class="login-box">
-      <form>
-        <div class="user-box">
-          <input type="int" name="" required="" />
-          <label>NIM</label>
+      <form class="form">
+        <div class="input-container">
+          <label for="NIM">NIM:</label>
+          <input
+            id="NIM"
+            class="input"
+            type="text"
+          />
         </div>
-        <div class="user-box">
-          <input type="string" name="" required="" />
-          <label>Nama Mahasiswa</label>
+        <div class="input-container">
+          <label for="noHp">No. Hp:</label>
+          <input
+            id="noHp"
+            class="input"
+            type="text"
+          />
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            placeholder="Enter your email"
+            class="input"
+            type="text"
+          />
         </div>
-        <div class="user-box">
-          <input type="string" name="" required="" />
-          <label for="program">Program</label>
-          <select id="program" name="Program">
-            <option value="reguler">Reguler</option>
-            <option value="perpanjang">Perpanjang</option>
-        </label>
-          </select>
+        <div class="input-container">
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            placeholder="*********"
+            class="input"
+            type="password"
+          />
         </div>
-        <div class="user-box">
-          <input type="string" name="" required="" />
-          <label>Status Bimbingan</label>
-        </div>
-        <div class="user-box">
-          <input type="int" name="" required="" />
-          <label>No. Hp</label>
-        </div>
-        <center>
-          <a href="home.html">
-            SEND
-            <span></span>
-          </a>
-        </center>
+
+        <button>Submit</button>
       </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
